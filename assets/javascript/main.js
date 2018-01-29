@@ -7,7 +7,7 @@ $(document).ready(function() {
     // displayMovieInfo function re-renders the HTML to display the appropriate content
     function displayInfo() {
         var show = $(this).attr("show-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + show + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + show + "&api_key=dc6zaTOxFJmzC&limit=10";
 
         // Creating an AJAX call for the specific show button being clicked
         $.ajax({
