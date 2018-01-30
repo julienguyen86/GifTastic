@@ -33,15 +33,15 @@ $(document).ready(function() {
                 var showAnimate = results[i].images.fixed_height.url;
 
                 // the still image and the moving image links in data attributes
-                var image = $("<img>").attr("src", showStill);
+                var gifDiv = $("<img>").attr("src", showStill);
 
-                image.addClass("showImages");
-                image.attr("data-still", showStill);
-                image.attr("data-animate", showAnimate);
-                image.attr("data-state", "still")
+                gifDiv.addClass("showImages");
+                gifDiv.attr("data-still", showStill);
+                gifDiv.attr("data-animate", showAnimate);
+                gifDiv.attr("data-state", "still")
                 // append the image into the div
                 showDiv.append(pRate);
-                showDiv.append(image);
+                showDiv.append(gifDiv);
 
                 $("#shows").append(showDiv);
             }
